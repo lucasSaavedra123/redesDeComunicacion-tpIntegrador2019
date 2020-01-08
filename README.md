@@ -3,7 +3,7 @@ En este repositorio voy a poner todo lo que pensé/desarrollé para realizar est
 ## Introduccion
 Dada la siguiente infraestructura de red:
 
-![Infraestructura de red del EVA](https://i.ibb.co/xzhCgv1/redEva.png)
+![Infraestructura de red del EVA](redEva.png)
 
 Realizar todas las configuraciones necesarias para cumplir con los siguientes requisitos:
  1. Considerar que el tamaño de las redes es el siguiente:
@@ -34,7 +34,8 @@ Realizar todas las configuraciones necesarias para cumplir con los siguientes re
 Dado el segmento de red que nos dieron, vamos a primero ver como se van distribuir las IP dentro del sistema.
 Primero, vamos a segmentar (de forma abstracta) a la red:
 
-![Red modificada para enteder abstracción](https://ibb.co/31MBHYq)
+![Red modificada para enteder abstracción](redEvaAbstraida.png)
+
 |Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|
 |--|--|--|--|
 |Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.1-172.18.4.254
