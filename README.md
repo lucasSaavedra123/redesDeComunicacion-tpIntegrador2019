@@ -34,7 +34,7 @@ Realizar todas las configuraciones necesarias para cumplir con los siguientes re
 Dado el segmento de red que nos dieron, vamos a primero ver como se van distribuir las IP dentro del sistema.
 Primero, vamos a segmentar (de forma abstracta) a la red:
 
-![Red modificada para enteder abstracción](redEvaAbstraida.png)
+![Red modificada para enteder abstracción](redAbstraida.png)
 
 |Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|
 |--|--|--|--|
