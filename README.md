@@ -36,8 +36,19 @@ Primero, vamos a segmentar (de forma abstracta) a la red:
 
 ![Red modificada para enteder abstracción](redAbstraida.png)
 
-|Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|
-|--|--|--|--|
-|Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.1-172.18.4.254
-|Red Finanzas|172.18.5.0/26|255.255.255.192|172.18.5.1-172.18.4.62
-|Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.65-172.18.4.126
+|Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|Nombre de VLAN|
+|--|--|--|--|--|
+|Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.1-172.18.4.254|publicVlan
+|Red Finanzas|172.18.5.0/26|255.255.255.192|172.18.5.1-172.18.4.62|financeVlan
+|Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.65-172.18.4.126|marketingVlan
+
+Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignadas a ciertos servidores (como por ejemplo, el servidor DHCP). Estan van a ser asiganadas de la siguiente manera:
+
+|--|--|
+|Servidor DHCP Público|172.18.4.1|
+|Servidor DHCP Finanzas|172.18.5.1|
+|Servidor DHCP Marketing|172.18.5.65|
+|Servidor FTP Finanzas|172.18.5.2|
+|Servidor FTP Marketing|172.18.5.66|
+
+Como tenemos un solo router que actua como servidor DHCP, vamos a hacer una partición lógica del puerto del router que va hacia el switch del DataCenter. De esta manera, podremos asignar a los sistemas que esten en cada VLAN diferentes direcciones IP de diferentes pools de direcciones.
