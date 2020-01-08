@@ -38,9 +38,9 @@ Primero, vamos a segmentar (de forma abstracta) a la red:
 
 |VLAN ID|Nombre de VLAN|Descripción|
 |--|--|--|
-|VLAN 10|publicVlan|-|
-|VLAN 20|financeVlan|-|
-|VLAN 30|marketingVlan|-|
+|VLAN 10|financeVlan|-|
+|VLAN 20|marketingVlan|-|
+|VLAN 30|publicVlan|-|
 
 |Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|Nombre de VLAN|
 |--|--|--|--|--|
