@@ -44,6 +44,7 @@ Primero, vamos a segmentar (de forma abstracta) a la red:
 
 Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignadas a ciertos servidores (como por ejemplo, el servidor DHCP). Estan van a ser asiganadas de la siguiente manera:
 
+|||
 |--|--|
 |Servidor DHCP Público|172.18.4.1|
 |Servidor DHCP Finanzas|172.18.5.1|
