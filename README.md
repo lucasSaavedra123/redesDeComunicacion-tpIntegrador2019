@@ -1,2 +1,42 @@
 # Trabajo Practico Integrador de Redes De Comunicacion 2019
-Aca van a estar todos los archivos con respecto al trabajo práctico que hay que entregar para el final de Redes de Comunicación.
+En este repositorio voy a poner todo lo que pensé/desarrollé para realizar este trabajo práctico. A medida que lo hago explico varios conceptos para poder entender bien como realizo el trabajo.
+## Introduccion
+Dada la siguiente infraestructura de red:
+
+![Infraestructura de red del EVA](https://i.ibb.co/xzhCgv1/redEva.png)
+
+Realizar todas las configuraciones necesarias para cumplir con los siguientes requisitos:
+ 1. Considerar que el tamaño de las redes es el siguiente:
+ - **Público**: 200 hosts
+ - **Finanzas**: 50 hosts
+ - **Marketing**: 50 hosts
+ 
+	Y luego asignar subredes de forma tal que *no exista comunicación directa entre las diferentes áreas*, sino sólo a través del **"Router Interno"**, utilizando el segmento **172.18.4.0/23**
+
+2. Todas las áreas deben obtener su configuración de forma **automática** utilizando el **DHCP Server**
+
+3. Cáda área con **servidor FTP** debe tener acceso exclusivo al mismo.
+
+4. Todas las áreas deben poder resolver nombres utilizando **DNS**
+
+5. Sólo el área pública tiene acceso a internet
+
+6. En el caso de ser necesario realizar configuraciones de routeo, las mismas deben ser dinámicas utilizando **RIP**.
+
+7. Asignar nombres de DNS a los servidores **FTP** y **HTTP**.
+
+> Por limitaciones del simulador, es necesario que existan clientes que no son PC para realizar pruebas FTP y HTTP, y los mismos no pueden ser configurados automáticamente por DHCP, por lo tanto, asignar IP estática, y removerla del pool de direcciones DHCP.
+> 
+> Pueden utilizarse todas las herramientas adicionales necesarias que no
+> estén descriptas en las restricciones, como por ejemplo **Vlans**.
+
+## Desarrollo
+Dado el segmento de red que nos dieron, vamos a primero ver como se van distribuir las IP dentro del sistema.
+Primero, vamos a segmentar (de forma abstracta) a la red:
+
+![Red modificada para enteder abstracción](https://ibb.co/31MBHYq)
+|Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|
+|--|--|--|--|
+|Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.1-172.18.4.254
+|Red Finanzas|172.18.5.0/26|255.255.255.192|172.18.5.1-172.18.4.62
+|Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.65-172.18.4.126
