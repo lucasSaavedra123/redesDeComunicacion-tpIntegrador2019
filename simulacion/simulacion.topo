@@ -158,9 +158,9 @@
         <shape type="1" filloption="0" color="4194368" upleftcorner="1297,500" width="396" height="599" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="4" />
     </shapes>
     <txttips>
-        <txttip left="182" top="1011" right="315" bottom="1035" content="Red Finanzas" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="584" top="1018" right="727" bottom="1042" content="Red Marketing" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="979" top="1023" right="1101" bottom="1047" content="Red Publica" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
-        <txttip left="1304" top="1068" right="1458" bottom="1092" content="Red Datacenter" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="182" top="1011" right="296" bottom="1031" content="Red Finanzas" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="584" top="1018" right="707" bottom="1038" content="Red Marketing" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="979" top="1023" right="1084" bottom="1043" content="Red Publica" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1304" top="1068" right="1436" bottom="1088" content="Red Datacenter" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
     </txttips>
 </topo>
