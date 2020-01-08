@@ -44,9 +44,9 @@ Primero, vamos a segmentar (de forma abstracta) a la red:
 
 |Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|Nombre de VLAN|
 |--|--|--|--|--|
-|Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.3-172.18.4.254|publicVlan|
-|Red Finanzas|172.18.5.0/26|255.255.255.192|172.18.5.4-172.18.4.62|financeVlan|
-|Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.68-172.18.4.126|marketingVlan|
+|Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.1-172.18.4.254|publicVlan|
+|Red Finanzas|172.18.5.0/26|255.255.255.192|172.18.5.1-172.18.4.62|financeVlan|
+|Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.65-172.18.4.126|marketingVlan|
 |Router Interno - Internet|172.18.5.128/30|255.255.255.252|172.18.5.129-172.18.4.130|-|
 |Router Interno - Servidor DNS|172.18.5.132/30|255.255.255.252|172.18.5.133-172.18.4.134|DNSVlan|
 
@@ -55,26 +55,20 @@ Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignad
 |Denominación|Direccion IP asignada|
 |--|--|
 |Servidor DHCP Público|172.18.4.1|
-|Servidor DHCP Finanzas|172.18.5.1|
-|Servidor DHCP Marketing|172.18.5.65|
-|Servidor FTP Finanzas|172.18.5.2|
-|Servidor FTP Marketing|172.18.5.66|
-|Interfaz de financeVlan|172.18.5.3|
 |Interfaz de publicVlan|172.18.4.2|
+|Servidor DHCP Finanzas|172.18.5.1|
+|Servidor FTP Finanzas|172.18.5.2|
+|Interfaz de financeVlan|172.18.5.3|
+|Servidor DHCP Marketing|172.18.5.65|
+|Servidor FTP Marketing|172.18.5.66|
 |Interfaz de marketingVlan|172.18.5.67|
 
-
-Por limites del simulador, asignamos a los sistemas "clientes" las sigueintes direcciones:
+Por limites del simulador, asignamos a los sistemas "clientes" las siguientes direcciones:
 
 |Denominación|Direccion IP asignada|
 |--|--|
-|Cliente Finanazas|172.18.4.2|
-|Cliente Marketing|172.18.5.2|
-|Cliente Publico|172.18.5.66|
+|Cliente Publico|172.18.4.3|
+|Cliente Finanzas|172.18.5.4|
+|Cliente Marketing|172.18.5.68|
 
 Como tenemos un solo router que actua como servidor DHCP, vamos a hacer una partición lógica del puerto del router que va hacia el switch del DataCenter. De esta manera, podremos asignar a los sistemas que esten en cada VLAN diferentes direcciones IP de diferentes pools de direcciones.
-
-Para la configuración seguiremos los siguientes pasos:
-
-1. [x] Asignar direcciones IP sin DHCP a todos los dispositivos
-2. [x] Configurar las VLAN en cada Switch (por asi decirlo,'configuramos la capa 2')

@@ -20,18 +20,6 @@
                 <interface sztype="Serial" interfacename="Serial" count="4" />
             </slot>
         </dev>
-        <dev id="3E387C2E-C2A8-4b2b-88C6-F9BDF7D143D0" name="DataCenter" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-7D-11-5D" com_port="2006" bootmode="0" cx="1320.363647" cy="525.727295" edit_left="1347" edit_top="579">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="GE" count="24" />
-            </slot>
-        </dev>
-        <dev id="8D36B8EF-E203-4156-AB67-4F91EF7A0F38" name="DHCP Server" poe="0" model="Router" settings="" system_mac="54-89-98-44-10-C0" com_port="2007" bootmode="1" cx="1612.522095" cy="525.407043" edit_left="1639" edit_top="579">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
-                <interface sztype="Ethernet" interfacename="GE" count="4" />
-                <interface sztype="Serial" interfacename="Serial" count="4" />
-            </slot>
-        </dev>
         <dev id="89B5D466-83D2-489a-A17E-A8979BD661B9" name="FTP Finanzas" poe="0" model="Server" settings="-domain 0 -eth 54-89-98-FE-5A-24 -ipaddr 0.0.0.0 -ipmask 255.255.255.0 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-38-39-7A" com_port="0" bootmode="1" cx="1612.536133" cy="626.612061" edit_left="1639" edit_top="680">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
@@ -47,22 +35,7 @@
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="F274F1E4-88AB-4a99-B54C-6C7726FDBE0E" name="Cliente Finanzas" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-33-49-E2 -ipaddr 172.18.5.4 -ipmask 255.255.255.0 -gateway 255.255.255.192 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-15-36-99" com_port="0" bootmode="0" cx="333.778015" cy="914.581055" edit_left="360" edit_top="968">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
-            </slot>
-        </dev>
         <dev id="C9384ADB-4164-40ad-B11B-A6ACDC81F9C8" name="Cliente Marketing" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-44-73-AE -ipaddr 1.0.1.2 -ipmask 255.255.255.0 -gateway 255.255.255.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-51-4A-A8" com_port="0" bootmode="0" cx="725.409058" cy="914.891052" edit_left="752" edit_top="968">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
-            </slot>
-        </dev>
-        <dev id="1BF64B8D-D900-4989-99D0-94A3B0AB6C36" name="Ejemplo Marketing" poe="0" model="PC" settings=" -simpc_ip 1.0.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-11-4D-89  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-11-4D-89" com_port="0" bootmode="0" cx="517.111023" cy="914.222046" edit_left="545" edit_top="968">
-            <slot number="slot17" isMainBoard="1">
-                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
-            </slot>
-        </dev>
-        <dev id="AEF9FF18-C57D-48ea-B609-548586497C9F" name="Ejemplo Finanzas" poe="0" model="PC" settings=" -simpc_ip 172.18.5.3  -simpc_mask 255.255.255.192  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-E3-27-2A  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-E3-27-2A" com_port="0" bootmode="0" cx="124.135010" cy="714.903015" edit_left="151" edit_top="767">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
@@ -77,12 +50,22 @@
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
-        <dev id="FD4E4161-530C-42f7-9F66-7896C4878A07" name="Cliente Publico" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-4A-04-BD -ipaddr 2.0.0.8 -ipmask 255.255.255.0 -gateway 255.255.255.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-4D-2A-A0" com_port="0" bootmode="0" cx="922.390076" cy="914.222046" edit_left="949" edit_top="968">
+        <dev id="F274F1E4-88AB-4a99-B54C-6C7726FDBE0E" name="Cliente Finanzas" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-33-49-E2 -ipaddr 172.18.5.4 -ipmask 255.255.255.192 -gateway 0.0.0.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-15-36-99" com_port="0" bootmode="0" cx="333.778015" cy="914.581055" edit_left="360" edit_top="968">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
         </dev>
-        <dev id="92F46646-775A-431f-99F2-799AFD7E9DF3" name="Ejemplo Publico" poe="0" model="PC" settings=" -simpc_ip 2.0.0.7  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-17-1B-9C  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-17-1B-9C" com_port="0" bootmode="0" cx="1123.378052" cy="715.910034" edit_left="1151" edit_top="771">
+        <dev id="AEF9FF18-C57D-48ea-B609-548586497C9F" name="Ejemplo Finanzas" poe="0" model="PC" settings=" -simpc_ip 172.18.5.10  -simpc_mask 255.255.255.192  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-E3-27-2A  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-E3-27-2A" com_port="0" bootmode="0" cx="124.135010" cy="714.903015" edit_left="151" edit_top="767">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="1BF64B8D-D900-4989-99D0-94A3B0AB6C36" name="Ejemplo Marketing" poe="0" model="PC" settings=" -simpc_ip 1.0.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-11-4D-89  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-11-4D-89" com_port="0" bootmode="0" cx="517.111023" cy="914.222046" edit_left="545" edit_top="968">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="FD4E4161-530C-42f7-9F66-7896C4878A07" name="Cliente Publico" poe="0" model="Client" settings="-domain 0 -eth 54-89-98-4A-04-BD -ipaddr 172.18.4.3 -ipmask 255.255.255.0 -gateway 255.255.255.0 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 0.0.0.0 -ipv6dns 3000::1 -dnslist NULL" system_mac="54-89-98-4D-2A-A0" com_port="0" bootmode="0" cx="922.390076" cy="914.222046" edit_left="949" edit_top="968">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
             </slot>
@@ -92,9 +75,26 @@
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
             </slot>
         </dev>
+        <dev id="92F46646-775A-431f-99F2-799AFD7E9DF3" name="Ejemplo Publico" poe="0" model="PC" settings=" -simpc_ip 172.18.4.254  -simpc_mask 255.255.255.0  -simpc_gateway 172.18.4.1  -simpc_mac 54-89-98-17-1B-9C  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-17-1B-9C" com_port="0" bootmode="0" cx="1123.378052" cy="715.910034" edit_left="1151" edit_top="771">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
         <dev id="723440AC-A160-4964-A5F1-01F666594C3B" name="Distribuidor" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-70-07-0E" com_port="2002" bootmode="0" cx="624.000000" cy="524.000000" edit_left="706" edit_top="521">
             <slot number="slot17" isMainBoard="1">
                 <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="3E387C2E-C2A8-4b2b-88C6-F9BDF7D143D0" name="DataCenter" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-7D-11-5D" com_port="2006" bootmode="0" cx="1320.363647" cy="525.727295" edit_left="1347" edit_top="579">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="8D36B8EF-E203-4156-AB67-4F91EF7A0F38" name="DHCP Server" poe="0" model="Router" settings="" system_mac="54-89-98-44-10-C0" com_port="2007" bootmode="0" cx="1612.522095" cy="525.407043" edit_left="1639" edit_top="579">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
             </slot>
         </dev>
     </devices>
@@ -153,7 +153,7 @@
     </lines>
     <shapes>
         <shape type="1" filloption="0" color="33023" upleftcorner="99,670" width="313" height="333" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="4" />
-        <shape type="1" filloption="0" color="16711680" upleftcorner="496,666" width="303" height="341" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="4" />
+        <shape type="1" filloption="0" color="16711680" upleftcorner="494,666" width="303" height="341" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="4" />
         <shape type="1" filloption="0" color="255" upleftcorner="865,664" width="338" height="349" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="4" />
         <shape type="1" filloption="0" color="4194368" upleftcorner="1297,500" width="396" height="599" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="4" />
     </shapes>
