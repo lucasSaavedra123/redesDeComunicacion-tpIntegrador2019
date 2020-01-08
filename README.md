@@ -36,12 +36,19 @@ Primero, vamos a segmentar (de forma abstracta) a la red:
 
 ![Red modificada para enteder abstracción](redAbstraida.png)
 
+|VLAN ID|Nombre de VLAN|Descripción|
+|--|--|--|
+|VLAN 10|publicVlan|-|
+|VLAN 20|financeVlan|-|
+|VLAN 30|marketingVlan|-|
+
 |Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|Nombre de VLAN|
 |--|--|--|--|--|
-|Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.1-172.18.4.254|publicVlan
-|Red Finanzas|172.18.5.0/26|255.255.255.192|172.18.5.1-172.18.4.62|financeVlan
-|Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.65-172.18.4.126|marketingVlan
-|Router Interno - Internet|172.18.5.128/30|255.255.255.252|172.18.5.129-172.18.4.130|marketingVlan
+|Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.1-172.18.4.254|publicVlan|
+|Red Finanzas|172.18.5.0/26|255.255.255.192|172.18.5.1-172.18.4.62|financeVlan|
+|Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.65-172.18.4.126|marketingVlan|
+|Router Interno - Internet|172.18.5.128/30|255.255.255.252|172.18.5.129-172.18.4.130|-|
+|Router Interno - Servidor DNS|172.18.5.132/30|255.255.255.252|172.18.5.133-172.18.4.134|DNSVlan|
 
 Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignadas a ciertos servidores (como por ejemplo, el servidor DHCP). Estan van a ser asiganadas de la siguiente manera:
 
