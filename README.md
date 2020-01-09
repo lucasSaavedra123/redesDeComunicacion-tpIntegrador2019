@@ -1,5 +1,6 @@
 # Trabajo Practico Integrador de Redes De Comunicacion 2019
-En este repositorio voy a poner todo lo que pensé/desarrollé para realizar este trabajo práctico. A medida que lo hago explico varios conceptos para poder entender bien como realizo el trabajo.
+En este repositorio voy a poner todo lo que pensé y desarrollé para realizar este trabajo práctico.
+
 ## Introduccion
 Dada la siguiente infraestructura de red:
 
@@ -7,10 +8,13 @@ Dada la siguiente infraestructura de red:
 
 Realizar todas las configuraciones necesarias para cumplir con los siguientes requisitos:
  1. Considerar que el tamaño de las redes es el siguiente:
- - **Público**: 200 hosts
- - **Finanzas**: 50 hosts
- - **Marketing**: 50 hosts
- 
+
+|Redes|Tamaño (Numero de Hosts)|
+|--|--|
+|Publico|200|
+|Finanzas|50|
+|Marketing|50|
+
 	Y luego asignar subredes de forma tal que *no exista comunicación directa entre las diferentes áreas*, sino sólo a través del **"Router Interno"**, utilizando el segmento **172.18.4.0/23**
 
 2. Todas las áreas deben obtener su configuración de forma **automática** utilizando el **DHCP Server**
@@ -41,6 +45,7 @@ Primero, vamos a segmentar (de forma abstracta) a la red:
 |VLAN 10|financeVlan|-|
 |VLAN 20|marketingVlan|-|
 |VLAN 30|publicVlan|-|
+|VLAN 40|DNSVlan|-|
 
 |Nombre de Red|Segmento de red asignado|Mascara de red|Bloque de direcciones utilizables|Nombre de VLAN|
 |--|--|--|--|--|
@@ -49,19 +54,22 @@ Primero, vamos a segmentar (de forma abstracta) a la red:
 |Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.65-172.18.4.126|marketingVlan|
 |Router Interno - Internet|172.18.5.128/30|255.255.255.252|172.18.5.129-172.18.4.130|-|
 |Router Interno - Servidor DNS|172.18.5.132/30|255.255.255.252|172.18.5.133-172.18.4.134|DNSVlan|
+|Internet - Web Server|172.18.5.136/30|255.255.255.252|172.18.5.137-172.18.4.138|-|
 
 Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignadas a ciertos servidores (como por ejemplo, el servidor DHCP). Estan van a ser asiganadas de la siguiente manera:
 
 |Denominación|Direccion IP asignada|
 |--|--|
 |Servidor DHCP Público|172.18.4.1|
-|Interfaz de publicVlan|172.18.4.2|
+|Gateway Primaria de publicVlan|172.18.4.2|
 |Servidor DHCP Finanzas|172.18.5.1|
 |Servidor FTP Finanzas|172.18.5.2|
 |Interfaz de financeVlan|172.18.5.3|
 |Servidor DHCP Marketing|172.18.5.65|
 |Servidor FTP Marketing|172.18.5.66|
 |Interfaz de marketingVlan|172.18.5.67|
+|Servidor DNS|172.18.5.134|
+|Servidor Web|172.18.5.138|
 
 Por limites del simulador, asignamos a los sistemas "clientes" las siguientes direcciones:
 
