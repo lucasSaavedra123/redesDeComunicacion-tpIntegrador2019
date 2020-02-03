@@ -52,9 +52,7 @@ Primero, vamos a segmentar (de forma abstracta) a la red:
 |Red Publica|172.18.4.0/24|255.255.255.000|172.18.4.1-172.18.4.254|publicVlan|
 |Red Finanzas|172.18.5.0/26|255.255.255.192|172.18.5.1-172.18.4.62|financeVlan|
 |Red Marketing|172.18.5.64/26|255.255.255.192|172.18.5.65-172.18.4.126|marketingVlan|
-|Router Interno - Internet|172.18.5.128/30|255.255.255.252|172.18.5.129-172.18.4.130|-|
-|Router Interno - Servidor DNS|172.18.5.132/30|255.255.255.252|172.18.5.133-172.18.4.134|DNSVlan|
-|Internet - Web Server|172.18.5.136/30|255.255.255.252|172.18.5.137-172.18.4.138|-|
+|Router Interno - Servidor DNS|172.18.5.128/30|255.255.255.252|172.18.5.129-172.18.4.130|-|
 
 Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignadas a ciertos servidores (como por ejemplo, el servidor DHCP). Estan van a ser asiganadas de la siguiente manera:
 
@@ -62,6 +60,7 @@ Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignad
 |--|--|
 |Servidor DHCP Público|172.18.4.1|
 |Gateway de publicVlan|172.18.4.2|
+|Servidor Web|172.18.4.4|
 |"Gateway secundario" de publicVlan (Acceso a Internet)|172.18.4.3|
 |Servidor DHCP Finanzas|172.18.5.1|
 |Servidor FTP Finanzas|172.18.5.2|
@@ -70,13 +69,12 @@ Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignad
 |Servidor FTP Marketing|172.18.5.66|
 |Interfaz de marketingVlan|172.18.5.67|
 |Servidor DNS|172.18.5.134|
-|Servidor Web|172.18.5.138|
 
 Por limites del simulador, asignamos a los sistemas "clientes" las siguientes direcciones:
 
 |Denominación|Direccion IP asignada|
 |--|--|
-|Cliente Publico|172.18.4.4|
+|Cliente Publico|172.18.4.5|
 |Cliente Finanzas|172.18.5.4|
 |Cliente Marketing|172.18.5.68|
 
