@@ -59,9 +59,8 @@ Van a ver direcciones IP que van a ser "especiales", es decir, van a ser asignad
 |Denominación|Direccion IP asignada|
 |--|--|
 |Servidor DHCP Público|172.18.4.1|
-|Gateway de publicVlan|172.18.4.2|
+|Interfaz de publicVlan|172.18.4.2|
 |Servidor Web|172.18.4.4|
-|"Gateway secundario" de publicVlan (Acceso a Internet)|172.18.4.3|
 |Servidor DHCP Finanzas|172.18.5.1|
 |Servidor FTP Finanzas|172.18.5.2|
 |Interfaz de financeVlan|172.18.5.3|
@@ -74,7 +73,7 @@ Por limites del simulador, asignamos a los sistemas "clientes" las siguientes di
 
 |Denominación|Direccion IP asignada|
 |--|--|
-|Cliente Publico|172.18.4.5|
+|Cliente Publico|172.18.4.3|
 |Cliente Finanzas|172.18.5.4|
 |Cliente Marketing|172.18.5.68|
 
